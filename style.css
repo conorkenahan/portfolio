@@ -77,12 +77,14 @@ header nav ul li a {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  text-align: center;
 }
 
 .center2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 main {
@@ -165,8 +167,8 @@ form input, form textarea {
   margin-bottom: 20px;
   font-family: arial;
   width: 100%;
-
 }
+
 
 
 
