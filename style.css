@@ -97,7 +97,12 @@ main {
   margin-left: 10px;
 }
 
-
+.portfolioImage {
+  display: flex;
+  justify-content: center;
+  width: 20em;
+  margin: auto;
+}
 
 
 /* groups and items - mobile first */
