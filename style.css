@@ -271,6 +271,24 @@ a {
   color: #7180b9;
 }
 
+.projectLinks {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+button {
+  font-size: 18px;
+  width: 135px;
+  height: 30px;
+  margin: 10px;
+  background-color: #c5cdee;
+  color: #232323;
+  background-color: #d7d7ff;
+  border: 1px solid #454545;
+  border-radius: 3px;
+}
+
 /* ====== Logo ====== */
 .logo {
   float: right;
