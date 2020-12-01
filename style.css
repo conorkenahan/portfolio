@@ -1,218 +1,428 @@
+/* ========== HOMEPAGE ========== */
 
-/* main styles */
-
-
-h2 {
-  color: #475E74;
-  text-align: center;
-  font-size: 150%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h3 {
-  color: #475E74;
-  font-size: 150%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-p, ul, ol {
-  color: #475E74;
-  font-size: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-body{
-  margin: 0;
-  background-color: #CEE1F2;
-}
-
-img {
-  width:100%;
-}
-
-img.rounded {
-  border-radius: 8px;
-}
-
-
-
-
-/* header & nav */
-
-header {
-  background-color: #CEE1F2;
-    margin-bottom: 40px;
-}
-
-header h1 {
-  color: #475E74;
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: 8px;
-}
-
-header nav {
-  text-align: center;
-  margin: 0;
-  padding-top: 20px;
+.homeWeb {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 70px;
 }
 
-header nav ul{
-  display: flex;
-  padding-left: 0;
-  list-style: none;
+.label-hello:after {
+  content: "Hello.";
+}
+.label-hello:hover:after {
+  content: "About";
+}
+.label-iam:after {
+  content: "I am";
+}
+.label-iam:hover:after {
+  content: "Work";
+}
+.label-conor:after {
+  content: "Conor";
+}
+.label-conor:hover:after {
+  content: "Contact";
+}
+.label-error:after {
+  content: "Oops!";
+}
+.label-error:hover:after {
+  content: "Home";
 }
 
-header nav ul li a {
-  color: #475E74;
+/* ===== Delays ===== */
+.delay02 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.delay04 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.delay06 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.delay08 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.delay10 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay12 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+/* ===== main styles ===== */
+
+a {
   text-decoration: none;
-  margin: 0 20px 0 0;
 }
 
-
-/* classes */
-
-.center {
-  display: block;
-  width: 100%;
+h1 {
+  font-size: 70px;
+  color: #232323;
   text-align: center;
+  margin: 10px;
 }
 
-.center2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-main {
-  border: 3px solid #F1F0EA;
-  padding: 10px;
-}
-
-.align-left {
-  text-align: left;
-  margin-left: 10px;
-}
-
-.portfolioImage {
-  display: flex;
-  justify-content: center;
-  width: 20em;
+ul {
+  width: 40px;
+  padding: 0 60px 0 0;
   margin: auto;
 }
 
-
-/* groups and items - mobile first */
-.wrapper {
-  width: 100%;
+body {
+  margin: 0;
+  background-color: #f7f6ee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-bottom: 200px;
 }
 
-.group {
+/* ========== Hover states ========== */
+.on-hover-40,
+.on-hover--40 {
+  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+  margin-left: 40px;
+  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover--40:hover {
+  margin-left: -40px;
+  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .on-hover-40:hover {
+    margin-left: 0px;
+  }
+  .on-hover--40:hover {
+    margin-left: 0px;
+  }
+}
+
+/* ========== Animations ========== */
+
+.animate {
+  -webkit-animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  -moz-animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* ========== classes ========== */
+
+.hideTextblock {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.block-image-overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.verticalCenter {
+  height: 100%;
+  align-items: center;
+}
+
+.fontColor1 {
+  color: #232323;
+}
+.fontColor2 {
+  color: #7180b9;
+}
+
+.title {
+  font-size: 200px;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 70px;
+    padding-bottom: 60px;
+  }
+  .aboutTitle {
+    font-size: 180px;
+  }
+}
+
+.projects {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.item {
-  flex:1;
-  margin: 10px;
+.project {
+  align-items: center;
+  border-top: 3px solid;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.item-double{
-  flex:2;
-  margin: 10px;
+.projectScreenshot {
+  width: 80%;
 }
 
-/* Groups & Items  (Desktop) */
+.projectDescription {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    width: 100%;
+  }
+  .projectDescription {
+    font-size: 19px;
+  }
+}
 
-@media all and (min-width: 600px) {
-  .wrapper {
-    width: 80%;
+.aboutText {
+  width: 700px;
+  margin: auto;
+  text-align: left;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutText {
+    padding: 0px 35px 0px 0px;
+    font-size: 40px;
+  }
+}
+
+.contactText {
+  font-size: 20px;
+}
+
+.myPhoto {
+  border-radius: 50%;
+  height: 600px;
+  width: auto;
+}
+
+.homeLinks {
+  width: 350px;
+  margin-left: 180px;
+  text-align: left;
+}
+
+/* ===== article sections =====*/
+
+#home,
+#portfolio,
+#contact,
+#about {
+  text-align: center;
+  max-width: 68%;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  #home,
+  #portfolio,
+  #contact,
+  #about {
+    padding: 50px;
+  }
+}
+
+/* ===== links ===== */
+
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #7180b9;
+}
+
+/* ====== Logo ====== */
+.logo {
+  float: right;
+}
+.logo-inner {
+  position: fixed;
+  top: 10%;
+  z-index: 999;
+}
+@media screen and (max-width: 767px) {
+  .logo-inner {
+    top: 5%;
+    left: 70%;
+  }
+}
+.label-logo:after {
+  font-size: 40px;
+  content: "conor";
+}
+.label-logo:hover:after {
+  content: "home";
+  white-space: nowrap;
+}
+@media screen and (max-width: 767px) {
+  .label-logo:hover:after {
+    content: "conor";
+  }
+}
+.label-logo {
+  -webkit-animation: fadelogo 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  -moz-animation: fadelogo 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation: fadelogo 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+@-webkit-keyframes fadelogo {
+  0% {
+    -webkit-transform: translateY(10vh);
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+  }
+}
+@keyframes fadelogo {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+}
+
+/* ========== MOBILE HOMEPAGE ========== */
+
+@media screen and (min-width: 768px) {
+  .hideMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .myPhoto {
+    border-radius: 50%;
+    height: auto;
+    width: 370px;
     margin: auto;
+    padding: 40px;
   }
-
-  .group {
-    flex-direction: row;
+  .hideWeb {
+    display: none;
   }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;  
+  .toggle-mobile-second {
+    display: none;
   }
-
-  header h1 {
-    margin: 14px 0;
-    padding-top: 0;
+  .mobile-tap-area {
+    background: transparent;
+    position: absolute;
+    width: 150%;
+    height: 150%;
   }
+  .tap-indication {
+    text-align: center;
+    color: #232323;
+    width: 100%;
+    position: fixed;
+    bottom: 2%;
+    font-size: 25px;
+    animation: bounce 1s infinite alternate;
 
-  header nav {
-    margin-top: 8px;
+    -webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
+      alternate;
+    -moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
+      alternate;
+    animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
   }
-
-  header nav ul li a:hover {
-    color: #bdbdbd;
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-8px);
+    }
   }
 }
 
-/* article sections*/
+/*	========== ABOUT AND CONTACT ==========*/
 
-#home, #portfolio, #contact, #about {
-  margin-bottom:120px;
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  line-height: 50px;
 }
 
-
-
-/* form */
-
-form{
-  padding-right: 6px;
-  color:#475E74;
-  font-size: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-form input, form textarea {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 20px;
-  font-family: arial;
-  width: 100%;
-}
-
-
-
-
-
-/* gap classes*/
-
-.gap-sm {
-    height: 50px;
+@media screen and (max-width: 767px) {
+  .links {
     width: auto;
-}
-.gap-md {
-    height: 100px;
-    width: auto;
-}
-.gap-lg {
-    height: 200px;
-    width: auto;
+    text-align: center;
+  }
 }
 
-.gap-footer {
-    height: 10px;
-    width: auto;
+/* ====== Copy email to clipboard ====== */
+.label-email {
+  cursor: pointer;
 }
-.bg-accent{
-  background-color: #F1F0EA;
+.label-email:after {
+  content: "conorkenahan@gmail.com";
 }
-
-/* links */
-
-a:link { color: #475E74; }
-a:visited { color: #8A86F4; }
-a:hover { color: #9c9b9a; }
-a:active { color: #403933; }
-
+.label-email:hover:after {
+  content: "Copy to clipboard";
+}
+.label-email:hover:active:after {
+  content: "Email copied";
+}
+@media screen and (max-width: 767px) {
+  .label-email:hover:after {
+    content: "Copied to clipboard";
+  }
+}

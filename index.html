@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Conor Kenahan</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Toggle button mobile -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".mobile-tap-area").click(function () {
+          $(".toggle-mobile-first").toggle();
+          $(".toggle-mobile-second").toggle();
+        });
+      });
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">    <title>Conor Kenahan</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-  
-  
-<body>
-    <!-- header with name and short description -->
-  <header>
-    <h1>CONOR KENAHAN</h1>
-    <nav>
-      <ul id="menu">
-        <li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-<!-- main bio with a few facts about me-->
-<main>
-    <div class="wrapper">
-      <article id="home">
-        <div class="group">
-          <div class="item">
-            <img src = "images/me.jpeg" width="300" class="center2" alt="">
-          </div>
-
-          <div class="item">
-            <h3> Hi, I'm Conor </h3>
-            <p> I am a Brooklyn-based software developer.</p>
-            <p>As a lifelong musician and audio engineer, I also enjoy writing and recording music. Some of my other hobbies include:</p>
-            <ul>
-            <li>rock climbing</li>
-            <li>swimming</li>
-            <li>video games</li>
-            </ul>
-            <p> Take a look around and feel free to reach out to me!</p>
-          </div>
-        </div>
-      </article>
-    </div>
-
-<hr>
-     <article id="about">
-       <div class="wrapper">
-         <h2> About Conor </h2>
-      <div class="group">
-        <div class="item-double">
-          <p>I am driven by curiosity inside and outside of work. As a natural born team-player, I would love to bring my talents to your company.</p>
-          <p> I am proficient in JavaScript, HTML, CSS, and Git, and can provide website building and basic JavaScript programming services.</p>
-        </div>
-          <div class="item">
-            <img src="images/about/harold.jpg" alt="Rock Climbing" class="rounded">
+  <body>
+    <div class="hideMobile mobile-tap-area homeMobile">
+      <div>
+        <img src="images/me.jpg" width="300" class="myPhoto" alt="me" />
+        <div class="homeLinks hideMobile">
+          <h1>
+            <div class="fontColor1 hideTextblock">
+              <div class="animate toggle-mobile-first">Hello.</div>
             </div>
-      </div>
-      </div>
-     </article>
-
-
-<hr>
-<!-- portfolio section here -->
-
- <div class="wrapper">
-      <article id="portfolio">
-      <h2> Portfolio </h2>
-      <div class="group">
-        <div class="item">
-          <img src="images/portfolio/whatdoyouneed1.png" alt="Quiz App Screenshot" class="rounded portfolioImage">
-          <h3>"What Do You Need Today?</h3>
-          <p>This project was developed to help people quickly see what weather-related items they need before leaving the house. It was coded with HTML, CSS, JavaScript, and jQuery. You can see it in use <a href="https://conorkenahan.github.io/whatdoyouneedtoday/">here.</a></p>
-          <p>To view the GitHub repo, click <a href="https://github.com/conorkenahan/whatdoyouneedtoday">here.</a>
+            <div class="fontColor2 hideTextblock">
+              <div class="animate delay04 toggle-mobile-first">I am</div>
+            </div>
+            <div class="fontColor2 hideTextblock">
+              <div class="animate delay08 toggle-mobile-first">Conor</div>
+            </div>
+          </h1>
         </div>
+
+        <div class="tap-indication hideMobile">Tap anywhere</div>
       </div>
-      </article>
-  </div>
-
-
-<hr>
-<!-- contact section with google map of NYC -->
-
-  <article id="contact">
-    <h2 class="align-left">Contact Conor</h2>
-    <div class="group">
-				<div class="item">
-				<form action="https://formspree.io/conorkenahan@gmail.com" method="POST">
-          <label for="user-name">Name:</label>
-          <input id="user-name" type="text" name="name">
-
-          <label for="user-email">Email:</label>
-          <input id="user-email" type="text" name="email">
-
-          <label for="user-message">Message:</label>
-          <textarea id="user-message" name="message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-        </div>
-         <div class="item-double">
-        <p> Please don't hesitate to reach out- I would love to chat!</p>
-        <p>You can find me on <a href="https://www.linkedin.com/in/conorkenahan/">LinkedIn</a> and <a href="https://github.com/conorkenahan">GitHub,</a> or email at <a href="mailto:conorkenahan@gmail.com">conorkenahan@gmail.com</a>.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d66802.741867904!2d-74.0040454972909!3d40.7006138221559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1593191274925!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="center"></iframe>
-        </div>
+      <div class="homeLinks">
+        <h1>
+          <div class="hideTextblock">
+            <a href="/src/about.html">
+              <div
+                class="animate fontColor1 on-hover-40 hideWeb label-hello"
+              ></div>
+              <div
+                class="animate fontColor1 on-hover-40 hideMobile toggle-mobile-second"
+              >
+                About
+              </div>
+            </a>
+          </div>
+          <div class="hideTextblock">
+            <a href="/src/work.html">
+              <div
+                class="animate fontColor2 on-hover-40 delay04 hideWeb label-iam"
+              ></div>
+              <div
+                class="animate fontColor2 on-hover-40 delay04 hideMobile toggle-mobile-second"
+              >
+                Work
+              </div>
+            </a>
+          </div>
+          <div class="hideTextblock">
+            <a href="/src/contact.html">
+              <div
+                class="animate fontColor2 on-hover-40 delay08 hideWeb label-conor"
+              ></div>
+              <div
+                class="animate fontColor2 on-hover-40 delay08 hideMobile toggle-mobile-second"
+              >
+                Contact
+              </div>
+            </a>
+          </div>
+        </h1>
       </div>
-  </article>
-
-</main>
-
-<footer class="center">
-<h3>© Conor Kenahan</h3>
-</footer>
-
-
-    <script src="script.js"></script>
+    </div>
+    <div class="homeWeb hideWeb">
+      <img src="images/me.jpg" width="300" class="myPhoto" alt="me" />
+      <h1 class="homeLinks">
+        <div class="hideTextblock">
+          <a href="/src/about.html">
+            <div
+              class="animate fontColor1 on-hover-40 hideWeb label-hello"
+            ></div>
+            <div
+              class="animate fontColor1 on-hover-40 hideMobile toggle-mobile-second"
+            >
+              About
+            </div>
+          </a>
+        </div>
+        <div class="hideTextblock">
+          <a href="/src/work.html">
+            <div
+              class="animate fontColor2 on-hover-40 delay04 hideWeb label-iam"
+            ></div>
+            <div
+              class="animate fontColor2 on-hover-40 delay04 hideMobile toggle-mobile-second"
+            >
+              Work
+            </div>
+          </a>
+        </div>
+        <div class="hideTextblock">
+          <a href="/src/contact.html">
+            <div
+              class="animate fontColor2 on-hover-40 delay08 hideWeb label-conor"
+            ></div>
+            <div
+              class="animate fontColor2 on-hover-40 delay08 hideMobile toggle-mobile-second"
+            >
+              Contact
+            </div>
+          </a>
+        </div>
+      </h1>
+    </div>
   </body>
 </html>
