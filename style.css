@@ -337,6 +337,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    margin: 0;
+  }
   .myPhoto {
     border-radius: 50%;
     height: auto;
