@@ -60,6 +60,13 @@
 
 /* ===== main styles ===== */
 
+body {
+  margin: 0;
+  background-color: #f7f6ee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-bottom: 200px;
+}
 a {
   text-decoration: none;
 }
@@ -71,18 +78,17 @@ h1 {
   margin: 10px;
 }
 
+h3,
+h4,
+p,
+ul {
+  font-family: "Roboto", sans-serif;
+}
+
 ul {
   width: 40px;
   padding: 0 60px 0 0;
   margin: auto;
-}
-
-body {
-  margin: 0;
-  background-color: #f7f6ee;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  padding-bottom: 200px;
 }
 
 /* ========== Hover states ========== */
@@ -142,6 +148,18 @@ body {
 
 /* ========== classes ========== */
 
+.indent {
+  text-indent: 40px;
+}
+
+.border-top {
+  border-top: 3px solid;
+}
+
+.center {
+  text-align: center;
+}
+
 .hideTextblock {
   position: relative;
   display: block;
@@ -199,10 +217,12 @@ body {
 }
 
 .aboutText {
-  width: 700px;
+  width: 600px;
   margin: auto;
   text-align: left;
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 1.8em;
+  padding-top: 30px;
 }
 
 .contactText {
@@ -228,6 +248,9 @@ body {
   .aboutTitle {
     font-size: 180px;
   }
+  .contactTitle {
+    font-size: 140px;
+  }
   .projects {
     width: 100%;
   }
@@ -240,6 +263,9 @@ body {
   }
   .homeLinks {
     margin-left: 150px;
+  }
+  .wide {
+    width: 100%;
   }
 }
 
@@ -266,8 +292,7 @@ body {
 /* ===== links ===== */
 
 a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #7180b9;
 }
 
@@ -286,6 +311,7 @@ button {
   background-color: #e5e5fcac;
   border: 1px solid #454545;
   border-radius: 3px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ====== Logo ====== */
@@ -304,8 +330,8 @@ button {
   }
 }
 .label-logo:after {
-  font-size: 40px;
   content: "conor";
+  font-weight: lighter;
 }
 .label-logo:hover:after {
   content: "home";
@@ -323,6 +349,8 @@ button {
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
+  font-size: 40px;
+  stroke: none;
 }
 @-webkit-keyframes fadelogo {
   0% {
@@ -412,7 +440,7 @@ button {
 .links {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   width: 30%;
   margin: auto;
   padding: 20px;
