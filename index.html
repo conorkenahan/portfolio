@@ -7,15 +7,15 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <!-- Toggle button mobile -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function () {
         $(".mobile-tap-area").click(function () {
           $(".toggle-mobile-first").toggle();
           $(".toggle-mobile-second").toggle();
         });
       });
-    </script>
-    <link
+    </script> -->
+    <!-- <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/images/favicons/apple-touch-icon.png"
@@ -32,7 +32,8 @@
       sizes="16x16"
       href="/images/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/images/favicons/site.webmanifest" />
+    <link rel="manifest" href="/images/favicons/site.webmanifest" /> -->
+    
   </head>
 
   <body>
@@ -42,16 +43,11 @@
         <div class="homeLinks hideMobile">
           <div>
             <div class="fontColor1 hideTextblock">
-              <h1 class="animate fontColor1 toggle-mobile-first">Hello.</h1>
+              <h1 class="fontColor1 toggle-mobile-first">Hello! </h1>
             </div>
             <div class="fontColor2 hideTextblock">
-              <h1 class="animate fontColor2 delay04 toggle-mobile-first">
-                I am
-              </h1>
-            </div>
-            <div class="fontColor2 hideTextblock">
-              <h1 class="animate fontColor2 delay08 toggle-mobile-first">
-                Conor
+              <h1 class="fontColor2 toggle-mobile-first">
+                I'm Conor.
               </h1>
             </div>
           </div>
@@ -64,10 +60,10 @@
           <div class="hideTextblock">
             <a href="/src/about.html">
               <div
-                class="animate fontColor1 on-hover-40 hideWeb label-hello"
-              ></div>
+                class="fontColor1 hideWeb"
+              >Hello! </div>
               <h1
-                class="animate fontColor1 on-hover-40 hideMobile toggle-mobile-second"
+                class="fontColor1 hideMobile toggle-mobile-second"
               >
                 About
               </h1>
@@ -76,10 +72,10 @@
           <div class="hideTextblock">
             <a href="/src/work.html">
               <div
-                class="animate fontColor2 on-hover-40 delay04 hideWeb label-iam"
-              ></div>
+                class="fontColor2 hideWeb"
+              >I'm Conor.</div>
               <h1
-                class="animate fontColor2 on-hover-40 delay04 hideMobile toggle-mobile-second"
+                class="fontColor2 hideMobile toggle-mobile-second"
               >
                 Work
               </h1>
@@ -88,10 +84,10 @@
           <div class="hideTextblock">
             <a href="/src/contact.html">
               <div
-                class="animate fontColor2 on-hover-40 delay08 hideWeb label-conor"
-              ></div>
+                class="fontColor2 hideWeb"
+              >Conor</div>
               <h1
-                class="animate fontColor2 on-hover-40 delay08 hideMobile toggle-mobile-second"
+                class="fontColor2 hideMobile toggle-mobile-second"
               >
                 Contact
               </h1>
@@ -102,42 +98,54 @@
     </div>
     <div class="homeWeb hideWeb">
       <img src="images/me.jpg" width="300" class="myPhoto" alt="me" />
-      <div class="homeLinks">
+      <div class="homeText">
         <div class="hideTextblock">
-          <a href="/src/about.html">
-            <h1 class="animate fontColor1 on-hover-40 hideWeb label-hello"></h1>
-            <div
-              class="animate fontColor1 on-hover-40 hideMobile toggle-mobile-second"
-            >
-              About
-            </div>
-          </a>
+          <h1 class="fontColor1 hideWeb">Hello!</h1>
+          <h1 class="fontColor2 hideWeb">I'm Conor.</h1>
         </div>
-        <div class="hideTextblock">
-          <a href="/src/work.html">
-            <h1
-              class="animate fontColor2 on-hover-40 delay04 hideWeb label-iam"
-            ></h1>
-            <div
-              class="animate fontColor2 on-hover-40 delay04 hideMobile toggle-mobile-second"
-            >
-              Work
-            </div>
-          </a>
+        <div class="homeLinks">
+          <a class="homeLink" href="/src/work.html">Work</a>
+          <p>/</p>
+          <a class="homeLink" href="/src/about.html">About</a>
         </div>
-        <div class="hideTextblock">
-          <a href="/src/contact.html">
-            <h1
-              class="animate fontColor2 on-hover-40 delay08 hideWeb label-conor"
-            ></h1>
-            <div
-              class="animate fontColor2 on-hover-40 delay08 hideMobile toggle-mobile-second"
+        <div class="homeContactLinks">
+            <a class="textColor2 label-email copy-email"></a>
+            <a
+              class="textColor2"
+              href="https://github.com/conorkenahan"
+              target="_blank"
+              >GitHub</a
             >
-              Contact
-            </div>
-          </a>
-        </div>
+            <a
+              class="textColor2"
+              href="http://linkedin.com/in/conorkenahan"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="textColor2"
+              href="../images/resume/ConorKenahan-SoftwareEngineer.pdf"
+              download
+            >
+              Résumé
+            </a>
+          </div>
       </div>
     </div>
   </body>
 </html>
+
+    <script src="../js/clipboard.min.js"></script>
+    <script>
+      var clipboard = new ClipboardJS(".copy-email", {
+        text: function () {
+          return "conorkenahan@gmail.com";
+        },
+      });
+      clipboard.on("success", function (e) {
+        console.log(e);
+      });
+      clipboard.on("error", function (e) {
+        console.log(e);
+      });
+    </script>
