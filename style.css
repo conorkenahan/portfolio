@@ -228,7 +228,7 @@ ul {
   color: #7180b9;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400) {
   .title {
     font-size: 70px;
     padding-bottom: 60px;
@@ -361,13 +361,28 @@ button {
 
 /* ========== MOBILE HOMEPAGE ========== */
 
+@media screen and (min-width: 400px) {
+  .hideMobile {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .hideMobile {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
+  .myPhoto{
+    height: 350px;
+    margin: auto;
+  }
+}
+
+
+@media screen 
+and (max-width: 767px)
+and (max-width: 400px) {
   h1 {
     margin: 0;
   }
@@ -398,36 +413,35 @@ button {
     width: 150%;
     height: 150%;
   }
-  .tap-indication {
-    text-align: center;
-    color: #232323;
-    width: 100%;
-    position: fixed;
-    bottom: 2%;
-    font-size: 25px;
-    animation: bounce 1s infinite alternate;
+}
 
-    -webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
-      alternate;
-    -moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
-      alternate;
-    animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
+/* ========== IPHONE 6/7/8 PLUS ========== */
+
+@media screen 
+and (max-height: 750px)
+and (max-width: 400px) {
+  .homeMobile{
+    padding-top: 20px;
+    text-align: center;
   }
-  @keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-8px);
-    }
+  .myPhoto{
+    width: 250px;
+    margin:auto;
   }
-  @-webkit-keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-8px);
-    }
+}
+
+/* ========== IPHONE 6/7/8 ========== */
+@media screen 
+and (max-height: 700px)
+and (max-width: 400px)
+ {
+  .homeMobile{
+    padding-top: 15px;
+    text-align: center;
+  }
+  .myPhoto{
+    width: 200px;
+    margin:auto;
   }
 }
 
