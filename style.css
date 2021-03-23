@@ -11,6 +11,30 @@
   padding-top: 50px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.project {
+  border-top: 3px solid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.projectScreenshot {
+  width: 80%;
+}
+
+.projectDescription {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 
@@ -32,6 +56,9 @@ h1 {
   color: #232323;
   text-align: center;
   margin: 10px;
+}
+h2 {
+  text-align: center;
 }
 
 h3,
@@ -146,30 +173,6 @@ ul {
 .title {
   font-size: 200px;
   text-align: left;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project {
-  align-items: center;
-  border-top: 3px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.projectScreenshot {
-  width: 80%;
-}
-
-.projectDescription {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .aboutText {
@@ -368,12 +371,20 @@ button {
   h1 {
     margin: 0;
   }
+  .homeMobile{
+    padding-top: 40px;
+  }
   .myPhoto {
     border-radius: 50%;
     height: auto;
-    width: 370px;
-    margin: auto;
-    padding: 40px;
+    width: 300px;
+    padding: 20px 40px 0 40px;
+  }
+  .homeContactLinks{
+    text-align: center;
+  }
+  .homeContactLink{
+    font-size:20px;
   }
   .hideWeb {
     display: none;
