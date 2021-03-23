@@ -7,6 +7,10 @@
   padding-top: 70px;
 }
 
+.portfolio{
+  padding-top: 50px;
+}
+
 
 
 
@@ -44,7 +48,7 @@ ul {
 }
 
 /* ========== Hover states ========== */
-.on-hover-40,
+/* .on-hover-40,
 .on-hover--40 {
   transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
@@ -63,7 +67,7 @@ ul {
   .on-hover--40:hover {
     margin-left: 0px;
   }
-}
+} */
 
 /* ========== Animations ========== */
 
@@ -182,8 +186,8 @@ ul {
 }
 
 .myPhoto {
-  border-radius: 50%;
-  height: 600px;
+  border-radius: 5%;
+  height: 500px;
   width: auto;
 }
 
@@ -192,6 +196,7 @@ ul {
   flex-direction: row;
   justify-content: space-around;
   align-self: flex-start;
+  margin-top: 10px;
 }
 
 .homeLink {
@@ -200,12 +205,24 @@ ul {
   color: #232323;
 }
 
+.homeLink:hover{
+  color: #7180b9;
+}
+
 .homeContactLinks {
-  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 250px;
+}
+
+.homeContactLink{
+  width: fit-content;
+}
+
+.homeContactLink:hover{
+  color: #7180b9;
 }
 
 @media screen and (max-width: 767px) {

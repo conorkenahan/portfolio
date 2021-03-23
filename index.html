@@ -5,39 +5,10 @@
     <meta name="viewport" content="width=device-width" />
     <title>Conor Kenahan</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <!-- Toggle button mobile -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <!-- <script type="text/javascript">
-      $(document).ready(function () {
-        $(".mobile-tap-area").click(function () {
-          $(".toggle-mobile-first").toggle();
-          $(".toggle-mobile-second").toggle();
-        });
-      });
-    </script> -->
-    <!-- <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/images/favicons/site.webmanifest" /> -->
-    
   </head>
 
   <body>
-    <div class="hideMobile mobile-tap-area homeMobile">
+    <!-- <div class="hideMobile mobile-tap-area homeMobile">
       <div>
         <img src="images/me.jpg" width="300" class="myPhoto" alt="me" />
         <div class="homeLinks hideMobile">
@@ -95,10 +66,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="homeWeb hideWeb">
-      <img src="images/me.jpg" width="300" class="myPhoto" alt="me" />
-      <div class="homeText">
+      <img src="images/me.jpeg" width="300" class="myPhoto" alt="me" />
+      <div>
         <div class="hideTextblock">
           <h1 class="fontColor1 hideWeb">Hello!</h1>
           <h1 class="fontColor2 hideWeb">I'm Conor.</h1>
@@ -109,43 +80,166 @@
           <a class="homeLink" href="/src/about.html">About</a>
         </div>
         <div class="homeContactLinks">
-            <a class="textColor2 label-email copy-email"></a>
             <a
-              class="textColor2"
+              class="fontColor1 homeContactLink"
               href="https://github.com/conorkenahan"
               target="_blank"
               >GitHub</a
             >
             <a
-              class="textColor2"
+              class="fontColor1 homeContactLink"
               href="http://linkedin.com/in/conorkenahan"
               target="_blank"
               >LinkedIn</a
             >
             <a
-              class="textColor2"
+              class="fontColor1 homeContactLink"
               href="../images/resume/ConorKenahan-SoftwareEngineer.pdf"
               download
             >
               Résumé
             </a>
+             <a class="fontColor1 label-email copy-email homeContactLink"></a>
           </div>
+      </div>
+    </div>
+    <div id="portfolio" class="portfolio">
+      <h2 class="myProjects">My Projects</h2>
+      <div>
+        <div class="projects">
+          <div class="project">
+            <a
+              class="projectImage"
+              href="https://roam.vercel.app/"
+              target="_blank"
+            >
+              <img
+                class="projectScreenshot hideWeb"
+                src="../images/portfolio/roam1.png"
+                alt="roam" />
+              <img
+                class="projectScreenshot hideMobile"
+                src="../images/portfolio/roammobile.png"
+                alt="roam"
+            /></a>
+            <div class="projectDescription">
+              <p>
+                Roam was developed to help people with disabilities find
+                accessibile locations in New York. The front-end was developed
+                primarily with React. The backend was developed from scratch.
+              </p>
+              <p>Back-end specs:</p>
+              <ul>
+                <li>Express</li>
+                <li>Node</li>
+                <li>Knex</li>
+                <li>PostgreSQL</li>
+                <li>Postgrator</li>
+              </ul>
+              <div class="projectLinks">
+                <a href="https://roam.vercel.app/" target="_blank"
+                  ><button>Live App</button></a
+                >
+                <a href="https://github.com/conorkenahan/roam" target="_blank"
+                  ><button>Github Repo</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a
+              class="projectImage"
+              href="https://found-food.vercel.app/"
+              target="_blank"
+            >
+              <img
+                class="projectScreenshot hideWeb"
+                src="../images/portfolio/foundfood1.png"
+                alt="found food"
+              />
+              <img
+                class="projectScreenshot hideMobile"
+                src="../images/portfolio/foundfoodmobile.png"
+                alt="found food"
+              />
+            </a>
+            <div class="projectDescription">
+              <p>
+                Found Food was developed to help people find recipes based off
+                limited ingredients they may already have in their kitchen. The
+                front-end was developed mainly with React, and the back-end was
+                also built from scratch.
+              </p>
+              <p>Back-end specs:</p>
+              <ul>
+                <li>Express</li>
+                <li>Node</li>
+                <li>Knex</li>
+                <li>PostgreSQL</li>
+                <li>Postgrator</li>
+              </ul>
+              <div class="projectLinks">
+                <a href="https://found-food.vercel.app/" target="_blank"
+                  ><button>Live App</button></a
+                >
+                <a
+                  href="https://github.com/conorkenahan/found-food"
+                  target="_blank"
+                  ><button>GitHub Repo</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a
+              class="projectImage"
+              href="https://conorkenahan.github.io/whatdoyouneedtoday/"
+              target="_blank"
+            >
+              <img
+                class="projectScreenshot hideWeb"
+                src="../images/portfolio/whatdoyouneed1.png"
+                alt="what do you need today?" />
+              <img
+                class="projectScreenshot hideMobile"
+                src="../images/portfolio/whatdoyouneedmobile.png"
+                alt="what do you need today?"
+            /></a>
+            <div class="projectDescription">
+              <p>
+                What Do You Need Today? was developed to help people quickly see
+                what weather-related items they need before leaving the house.
+                It was coded with HTML, CSS, JavaScript, and jQuery.
+              </p>
+              <div class="projectLinks">
+                <a href="https://conorkenahan.github.io/whatdoyouneedtoday/"
+                  ><button>Live App</button></a
+                >
+                <a
+                  href="https://github.com/conorkenahan/whatdoyouneedtoday"
+                  target="_blank"
+                  ><button>GitHub Repo</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
 </html>
 
-    <script src="../js/clipboard.min.js"></script>
-    <script>
-      var clipboard = new ClipboardJS(".copy-email", {
-        text: function () {
-          return "conorkenahan@gmail.com";
-        },
-      });
-      clipboard.on("success", function (e) {
-        console.log(e);
-      });
-      clipboard.on("error", function (e) {
-        console.log(e);
-      });
-    </script>
+<script src="../js/clipboard.min.js"></script>
+<script>
+  var clipboard = new ClipboardJS(".copy-email", {
+    text: function () {
+      return "conorkenahan@gmail.com";
+    },
+  });
+  clipboard.on("success", function (e) {
+    console.log(e);
+  });
+  clipboard.on("error", function (e) {
+    console.log(e);
+  });
+</script>
