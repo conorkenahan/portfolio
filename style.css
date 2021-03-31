@@ -74,61 +74,6 @@ ul {
   margin: auto;
 }
 
-/* ========== Hover states ========== */
-/* .on-hover-40,
-.on-hover--40 {
-  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
-}
-.on-hover-40:hover {
-  margin-left: 40px;
-  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
-}
-.on-hover--40:hover {
-  margin-left: -40px;
-  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
-}
-@media screen and (max-width: 767px) {
-  .on-hover-40:hover {
-    margin-left: 0px;
-  }
-  .on-hover--40:hover {
-    margin-left: 0px;
-  }
-} */
-
-/* ========== Animations ========== */
-
-/* .animate {
-  -webkit-animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  -moz-animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  animation: animate 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  -webkit-animation-fill-mode: backwards;
-  -moz-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-} */
-
-/* @-webkit-keyframes animate {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(30vh);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-} */
-
 /* ========== classes ========== */
 
 .indent {
