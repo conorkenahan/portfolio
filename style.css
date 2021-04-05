@@ -19,18 +19,25 @@
   margin: auto;
 }
 
+
 .project {
-  width: 500px;
+  width: auto;
   border-top: 3px solid;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .projectScreenshot {
-  width: 80%;
+  width: 90%;
+  transition: transform .2s;
+}
+
+.projectScreenshot:hover {
+  transform: scale(1.5);
 }
 
 .projectDescription {
+  line-height: 150%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -238,12 +245,11 @@ a {
 .projectLinks {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
 }
 
 button {
-  font-size: 18px;
-  width: 130px;
+  font-size: 15px;
+  width: 110px;
   height: 28px;
   margin: 10px;
   color: #232323;
