@@ -8,7 +8,6 @@
   </head>
 
   <body>
-      <!-- <img class="background-image" src="./images/background-mobile-2.jpg" /> -->
       <h1 class="album-artist">Conor Kenahan</h1>
       <div class="album">
         <a href="https://linktr.ee/conorkenahan">
@@ -35,18 +34,3 @@
       </div>
   </body>
 </html>
-
-<script src="../js/clipboard.min.js"></script>
-<script>
-  var clipboard = new ClipboardJS(".copy-email", {
-    text: function () {
-      return "conorkenahan@gmail.com";
-    },
-  });
-  clipboard.on("success", function (e) {
-    console.log(e);
-  });
-  clipboard.on("error", function (e) {
-    console.log(e);
-  });
-</script>
