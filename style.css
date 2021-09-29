@@ -1,10 +1,3 @@
-
-@font-face {
-  font-family: OPTI;
-  src: url("./fonts/OPTIBarMay-HeavyItalic.otf") format("opentype");
-}
-
-
 @font-face {
   font-family: Dala;
   src: url("./fonts/DalaFloda-Medium-Cyr.otf") format("opentype");
@@ -72,7 +65,7 @@ a {
 /* ===== main styles ===== */
 
 body {
-  background-image: url(./images/background-mobile-2.jpg);
+  background-image: url(./images/background-images/background-mobile-2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -98,7 +91,7 @@ body {
 
 @media (min-width: 500px) {
   body {
-    background-image: url(./images/background-desktop.jpg);
+    background-image: url(./images/background-images/background-desktop.jpg);
     background-repeat: no-repeat;
     background-size: fill;
     background-attachment: fixed;
