@@ -1,450 +1,114 @@
+
+@font-face {
+  font-family: OPTI;
+  src: url("./fonts/OPTIBarMay-HeavyItalic.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: Dala;
+  src: url("./fonts/DalaFloda-Medium-Cyr.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Dala-Italic;
+  src: url("./fonts/DalaFloda-MediumItalic-Cyr.otf") format("opentype");
+}
+
 /* ========== HOMEPAGE ========== */
 
-.homeWeb {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 70px;
+
+.background-image {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
-.portfolio{
-  padding-top: 50px;
+.album-artist {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.projects {
+.album {
+  margin: auto;
+  width: fit-content;
+  height: auto;
+}
+
+a {
+  color: black;
+}
+
+.reverie {
+  width: 85%;
+  position: relative;
+  background-color: grey;
+  margin: auto;
   display: flex;
-  flex-direction: row;
-  align-items: space-between;
-  width: 90%;
+  justify-content: center;
+}
+
+.out-now-text {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
   margin: auto;
 }
 
-
-.project {
+.social-icons-container {
   display: flex;
-  flex-direction: column;
-  width: auto;
-  border-top: 3px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.projectScreenshot {
-  margin: 10px;
-  width: 90%;
-  transition: transform .2s;
-}
-
-.projectScreenshot:hover {
-  transform: scale(1.2);
-}
-
-.projectDescription {
-  text-align: center;
-  line-height: 150%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 10px auto 0 auto;
 }
 
+.social-icon {
+  width: 40px;
+  margin: 10px
+}
 
 
 /* ===== main styles ===== */
 
 body {
+  background-image: url(./images/background-mobile-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100vw;
   margin: 0;
-  background-color: #f7f6ee;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  color: black;
+  font-family: "Dala", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding-bottom: 200px;
-}
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 70px;
-  color: #232323;
-  text-align: center;
-  margin: 10px;
-}
-h2 {
-  text-align: center;
-}
-
-h3,
-h4,
-p,
-ul {
-  font-family: "Roboto", sans-serif;
-}
-
-ul {
-  width: 40px;
-  padding: 0 60px 0 0;
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
   margin: auto;
-}
-
-/* ========== classes ========== */
-
-.indent {
-  text-indent: 40px;
-}
-
-.border-top {
-  border-top: 3px solid;
-}
-
-.center {
   text-align: center;
+  padding-top: 1px;
 }
 
-.hideTextblock {
-  position: relative;
-  display: block;
-  overflow: hidden;
+.italic {
+  font-family: "Dala-Italic"
 }
 
-.block-image-overflow {
-  width: 100%;
-  overflow: hidden;
-}
 
-.hide {
-  display: none;
-}
+/* MOBILE */
 
-.verticalCenter {
-  height: 100%;
-  align-items: center;
-}
-
-.fontColor1 {
-  color: #232323;
-}
-.fontColor2 {
-  color: #7180b9;
-}
-
-.title {
-  font-size: 200px;
-  text-align: left;
-}
-
-.aboutText {
-  width: 600px;
-  margin: auto;
-  text-align: left;
-  font-size: 20px;
-  line-height: 1.8em;
-  padding-top: 30px;
-}
-
-.contactText {
-  font-size: 20px;
-}
-
-.myPhoto {
-  border-radius: 5%;
-  height: 500px;
-  width: auto;
-}
-
-.homeLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: flex-start;
-  margin-top: 10px;
-}
-
-.homeLink {
-  align-self: center;
-  font-size: 30px;
-  color: #232323;
-}
-
-.homeLink:hover{
-  color: #7180b9;
-}
-
-.homeContactLinks {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 250px;
-}
-
-.homeContactLink{
-  width: fit-content;
-}
-
-.homeContactLink:hover{
-  color: #7180b9;
-}
-
-@media screen and (max-width: 400) {
-  .title {
-    font-size: 70px;
-    padding-bottom: 60px;
+@media (min-width: 500px) {
+  body {
+    background-image: url(./images/background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-attachment: fixed;
+    background-size: cover;
   }
-  .aboutTitle {
-    font-size: 180px;
+  .reverie {
+    width: 480px;
   }
-  .contactTitle {
-    font-size: 140px;
-  }
-  .projects {
-    width: 100%;
-  }
-  .projectDescription {
-    font-size: 19px;
-  }
-  .aboutText {
-    padding: 0px 35px 0px 0px;
-    font-size: 40px;
-  }
-  .homeLinks {
-    margin-left: 150px;
-  }
-  .wide {
-    width: 100%;
-  }
-}
 
-/* ===== article sections =====*/
-
-#home,
-#portfolio,
-#contact,
-#about {
-  text-align: center;
-  max-width: 68%;
-  margin: auto;
-}
-
-#portfolio{
-  max-width:100%;
-}
-
-@media screen and (max-width: 767px) {
-  #home,
-  #portfolio,
-  #contact,
-  #about {
-    padding: 50px;
-  }
-}
-
-/* ===== links ===== */
-
-a {
-  font-family: "Roboto", sans-serif;
-  color: #7180b9;
-}
-
-.projectLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-button {
-  font-size: 15px;
-  width: 110px;
-  height: 28px;
-  margin: 10px;
-  color: #232323;
-  background-color: #e5e5fcac;
-  border: 1px solid #454545;
-  border-radius: 3px;
-  font-family: "Roboto", sans-serif;
-}
-
-/* ====== Logo ====== */
-.logo {
-  float: right;
-}
-.logo-inner {
-  position: fixed;
-  top: 10%;
-  z-index: 999;
-}
-@media screen and (max-width: 767px) {
-  .logo-inner {
-    top: 5%;
-    left: 70%;
-  }
-}
-.label-logo:after {
-  content: "conor";
-  font-weight: lighter;
-}
-.label-logo:hover:after {
-  content: "home";
-  white-space: nowrap;
-}
-@media screen and (max-width: 767px) {
-  .label-logo:hover:after {
-    content: "conor";
-  }
-}
-.label-logo {
-  -webkit-animation: fadelogo 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  -moz-animation: fadelogo 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  animation: fadelogo 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-  -webkit-animation-fill-mode: backwards;
-  -moz-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-  font-size: 40px;
-  stroke: none;
-}
-@-webkit-keyframes fadelogo {
-  0% {
-    -webkit-transform: translateY(10vh);
-  }
-  100% {
-    -webkit-transform: translateY(0vh);
-  }
-}
-@keyframes fadelogo {
-  0% {
-    opacity: 0;
-    transform: translateY(10vh);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0vh);
-  }
-}
-
-/* ========== MOBILE HOMEPAGE ========== */
-
-@media screen and (min-width: 415px) {
-  .hideMobile {
-    display: none;
-    
-  }
-}
-@media screen and (min-width: 768px) {
-  .hideMobile {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .myPhoto{
-    height: 350px;
-    margin: auto;
-  }
-}
-
-
-@media screen 
-and (max-width: 767px)
-and (max-width: 415px) {
-  h1 {
-    margin: 0;
-  }
-  .homeMobile{
-    padding-top: 10px;
-  }
-  .projects{
-    display: inline;
-  }
-  .myPhoto {
-    border-radius: 50%;
-    height: auto;
-    width: 300px;
-    padding: 20px 40px 0 40px;
-  }
-  .homeContactLinks{
-    text-align: center;
-  }
-  .homeContactLink{
-    font-size:20px;
-  }
-  .hideWeb {
-    display: none;
-  }
-  .toggle-mobile-second {
-    display: none;
-  }
-  .mobile-tap-area {
-    background: transparent;
-    position: absolute;
-    width: 150%;
-    height: 150%;
-  }
-}
-
-/* ========== IPHONE 6/7/8 PLUS ========== */
-
-@media screen 
-and (max-height: 750px)
-and (max-width: 400px) {
-  .homeMobile{
-    padding-top: 20px;
-    text-align: center;
-  }
-  .myPhoto{
-    width: 250px;
-    margin:auto;
-  }
-}
-
-/* ========== IPHONE 6/7/8 ========== */
-@media screen 
-and (max-height: 700px)
-and (max-width: 400px)
- {
-  .homeMobile{
-    padding-top: 15px;
-    text-align: center;
-  }
-  .myPhoto{
-    width: 200px;
-    margin:auto;
-  }
-}
-
-/*	========== ABOUT AND CONTACT ==========*/
-
-.links {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 30%;
-  margin: auto;
-  padding: 20px;
-  line-height: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .links {
-    width: auto;
-    text-align: center;
-  }
-}
-
-/* ====== Copy email to clipboard ====== */
-.label-email {
-  cursor: pointer;
-}
-.label-email:after {
-  content: "conorkenahan@gmail.com";
-}
-.label-email:hover:after {
-  content: "Copy to clipboard";
-}
-.label-email:hover:active:after {
-  content: "Email copied";
-}
-@media screen and (max-width: 767px) {
-  .label-email:hover:after {
-    content: "Copied to clipboard";
+  .album-artist {
+    font-size: 50px;
   }
 }
