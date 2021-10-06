@@ -63,7 +63,14 @@ a {
 
 /* ===== main styles ===== */
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
+  overflow: auto;
+  height: 100%;
   background-image: url(./images/background-images/background-mobile-2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
