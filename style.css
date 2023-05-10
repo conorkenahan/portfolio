@@ -1,11 +1,10 @@
 @font-face {
-  font-family: Dala;
-  src: url("./fonts/DalaFloda-Medium-Cyr.otf") format("opentype");
+  font-family: 'Trade Gothic';
+  src: url("./fonts/trade-gothic-cold-condensed.ttf") format("opentype");
 }
-
 @font-face {
-  font-family: Dala-Italic;
-  src: url("./fonts/DalaFloda-MediumItalic-Cyr.otf") format("opentype");
+  font-family: 'Serif Shaded';
+  src: url("./fonts/sans-serif-shaded.regular.ttf") format("opentype");
 }
 
 /* ========== HOMEPAGE ========== */
@@ -18,16 +17,93 @@
   left: 0;
 }
 
+.header {
+  display: flex;
+  margin-left: 60px;
+}
 .album-artist {
   font-size: 40px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
+.header-options {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-option {
+  margin: 0;
+}
+
+.tablinks {
+  font-family: 'Serif Shaded';
+}
+
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 72px;
+  margin-bottom: 100px;
+  width: 400px;
+}
+
+.section-1, .section-2 {
+  margin-bottom: 40px;
+}
+
+.section-radio {
+  width: 70%;
+}
+
+.section-contact {
+  width: 100%;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-text {
+  width: 500px;
+  font-size: 20px;
+}
+
+.contact-photo {
+  width: 450px;
+}
+
+.section-header {
+  text-align: center;
+}
 
 .album {
   margin: auto;
-  width: fit-content;
-  height: auto;
+}
+.album-img {
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 10px;
+  width: 500px;
+  height: 500px;
+}
+
+.album-description {
+  font-size: 20px;
+}
+
+.radio-widget-container {
+  display: flex;
+}
+
+.radio-widget {
+  margin: auto;
 }
 
 a {
@@ -52,7 +128,10 @@ a {
 
 .social-icons-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-right: 60px;
+  position: absolute;
+  right: 0;
 }
 
 .social-icon {
@@ -71,43 +150,55 @@ html {
 body {
   overflow: auto;
   height: 100%;
-  background-image: url(./images/background-images/background-mobile-2.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background-image: linear-gradient( #7ab0b4, #b3b0a5);
   width: 100vw;
   margin: 0;
   color: black;
-  font-family: "Dala", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  font-family: "Trade Gothic", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   box-sizing: border-box;
   margin: 0 !important;
   padding: 0 !important;
   margin: auto;
-  text-align: center;
   padding-top: 1px;
-}
-
-.italic {
-  font-family: "Dala-Italic"
 }
 
 
 /* MOBILE */
 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   body {
-    background-image: url(./images/background-images/background-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: fill;
-    background-attachment: fixed;
-    background-size: cover;
+
   }
-  .reverie {
-    width: 480px;
+  .header {
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: column;
+    height: 100px;
+  }
+  .section-1 {
+    flex-direction: column;
+  }
+  .album-img {
+    width: 100%;
+    height: 250px;
+  }
+  .album-description {
+    text-align: center;
+  }
+  .social-icons-container {
+    position: inherit;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .album-artist {
-    font-size: 50px;
+    margin: auto;
+    font-size: 60px;
   }
 }
