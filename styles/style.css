@@ -34,7 +34,8 @@
   margin-bottom: 20px;
   padding-bottom: 6px;
   border-bottom: 1px solid rgba(127, 127, 127, 0.25);
-  color: #4d4d4d !important; }
+  color: #4d4d4d !important;
+  -webkit-font-smoothing: antialiased; }
   .header-links h3 {
     margin: 10px;
     cursor: pointer; }
@@ -67,7 +68,8 @@
   margin-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(127, 127, 127, 0.25);
-  color: #4d4d4d !important; }
+  color: #4d4d4d !important;
+  -webkit-font-smoothing: antialiased; }
 
 .contact-content {
   display: flex;
@@ -95,6 +97,7 @@
 
 a {
   color: #4d4d4d !important;
+  -webkit-font-smoothing: antialiased;
   text-decoration: none; }
 
 .bandcamp-follow-embed {
@@ -121,7 +124,8 @@ html {
   background-size: cover; }
 
 h1 {
-  color: #4d4d4d !important; }
+  color: #4d4d4d !important;
+  -webkit-font-smoothing: antialiased; }
 
 /* MOBILE */
 @media (max-width: 900px) {

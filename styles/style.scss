@@ -44,6 +44,7 @@ $gray: rgb(77, 77, 77);
   padding-bottom: 6px;
   border-bottom: 1px solid $border;
   color: $gray !important;
+  -webkit-font-smoothing: antialiased;
   h3 {
     margin: 10px;
     cursor: pointer;
@@ -82,6 +83,7 @@ $gray: rgb(77, 77, 77);
   padding-bottom: 40px;
   border-bottom: 1px solid $border;
   color: $gray !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 .contact-content {
@@ -116,6 +118,7 @@ $gray: rgb(77, 77, 77);
 
 a {
   color: $gray !important;
+  -webkit-font-smoothing: antialiased;
   text-decoration: none;
 }
 
@@ -150,6 +153,7 @@ html {
 
 h1 {
   color: $gray !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 
