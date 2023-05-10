@@ -16,7 +16,7 @@
   margin-right: 0;
   right: 0;
   top: 0;
-  color: rgba(0, 0, 0, 0.7);
+  color: #4d4d4d !important;
   font-family: "Trade Gothic", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: rgba(228, 224, 224, 0.664); }
 
@@ -34,7 +34,7 @@
   margin-bottom: 20px;
   padding-bottom: 6px;
   border-bottom: 1px solid rgba(127, 127, 127, 0.25);
-  color: rgba(0, 0, 0, 0.7); }
+  color: #4d4d4d !important; }
   .header-links h3 {
     margin: 10px;
     cursor: pointer; }
@@ -67,7 +67,7 @@
   margin-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(127, 127, 127, 0.25);
-  color: rgba(0, 0, 0, 0.7); }
+  color: #4d4d4d !important; }
 
 .contact-content {
   display: flex;
@@ -94,7 +94,7 @@
   height: auto; }
 
 a {
-  color: rgba(0, 0, 0, 0.7);
+  color: #4d4d4d !important;
   text-decoration: none; }
 
 .bandcamp-follow-embed {
@@ -121,10 +121,10 @@ html {
   background-size: cover; }
 
 h1 {
-  color: rgba(0, 0, 0, 0.7); }
+  color: #4d4d4d !important; }
 
 /* MOBILE */
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   html {
     background: none; }
   body {
@@ -152,7 +152,6 @@ h1 {
     .header .header-links {
       padding-bottom: 10px; }
     .header h3 {
-      font-size: 13px;
       margin: 0; }
   .album-artist {
     margin: auto;
@@ -165,6 +164,10 @@ h1 {
       width: 100.5%; }
   .sections {
     margin-top: 35px; } }
+
+@media (max-width: 460px) {
+  h3 {
+    font-size: 13px; } }
 
 @keyframes fadeInAnimation {
   0% {

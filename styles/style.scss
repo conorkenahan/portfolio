@@ -8,7 +8,7 @@
 }
 
 $border:rgba(127, 127, 127, 0.25);
-$gray: rgba(0, 0, 0, 0.7);
+$gray: rgb(77, 77, 77);
 
 /* ========== HOMEPAGE ========== */
 
@@ -22,7 +22,7 @@ $gray: rgba(0, 0, 0, 0.7);
   margin-right: 0;
   right: 0;
   top: 0;
-  color: $gray;
+  color: $gray !important;
   font-family: "Trade Gothic", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     background-color: rgba(228, 224, 224, 0.664);
@@ -43,7 +43,7 @@ $gray: rgba(0, 0, 0, 0.7);
   margin-bottom: 20px;
   padding-bottom: 6px;
   border-bottom: 1px solid $border;
-  color: $gray;
+  color: $gray !important;
   h3 {
     margin: 10px;
     cursor: pointer;
@@ -81,7 +81,7 @@ $gray: rgba(0, 0, 0, 0.7);
   margin-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid $border;
-  color: $gray;
+  color: $gray !important;
 }
 
 .contact-content {
@@ -115,7 +115,7 @@ $gray: rgba(0, 0, 0, 0.7);
 }
 
 a {
-  color: $gray;
+  color: $gray !important;
   text-decoration: none;
 }
 
@@ -149,7 +149,7 @@ html {
 }
 
 h1 {
-  color: $gray;
+  color: $gray !important;
 }
 
 
@@ -157,7 +157,7 @@ h1 {
 
 /* MOBILE */
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   html {
     background: none;
   }
@@ -193,7 +193,6 @@ h1 {
     }
 
     h3 {
-      font-size:  13px;
       margin: 0;
     }
   }
@@ -211,6 +210,12 @@ h1 {
   }
   .sections {
     margin-top: 35px;
+  }
+}
+
+@media (max-width: 460px) {
+  h3 {
+    font-size:  13px;
   }
 }
 
