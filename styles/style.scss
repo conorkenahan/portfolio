@@ -7,7 +7,13 @@
   src: url("../fonts/Nitti-normal.ttf") format("opentype");
 }
 
+$border:rgba(127, 127, 127, 0.25);
+
 /* ========== HOMEPAGE ========== */
+
+.mobile-image {
+  display: none;
+}
 
 .content {
   position: absolute;
@@ -22,19 +28,20 @@
 }
 
 .header {
-  display: flex;
-  margin-left: 60px;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  padding-bottom: 20px;
 }
 
 .header-links {
   margin: auto;
-  width: 94%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-bottom: 6px;
-  border-bottom: 1px solid rgba(127, 127, 127, 0.25);;
+  border-bottom: 1px solid $border;
 
   h3 {
     margin: 10px;
@@ -64,13 +71,15 @@
   padding-bottom: 50px;
   margin-bottom: 50px;
   width: 100%;
-  border-bottom: 1px solid rgba(127, 127, 127, 0.25);
+  border-bottom: 1px solid $border;
 }
 
 .album-artist {
+  margin: auto;
   font-size: 40px;
   margin-top: 40px;
-  margin-bottom: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $border;
 }
 
 .contact-content {
@@ -112,19 +121,6 @@ a {
   width: 100%;
 }
 
-.social-icons-container {
-  display: flex;
-  flex-direction: column;
-  margin-right: 60px;
-  position: absolute;
-  right: 0;
-}
-
-.social-icon {
-  width: 40px;
-  margin: 10px
-}
-
 marquee {
   font-size: 10px;
   margin-top: -30px;
@@ -140,7 +136,7 @@ marquee {
 
 html {
   height: 100%;
-  background: url('../images/background-gif-colorized.gif') no-repeat center center fixed; 
+  background: url('../images/background-gif-desktop.gif') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -152,24 +148,59 @@ html {
 
 /* MOBILE */
 
-@media (min-width: 300px) {
+@media (max-width: 480px) {
+  html {
+    background: none;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-image {
+    display: block;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+  .content {
+    position: relative;
+    width: 100%;
+  }
   .header {
     margin: auto;
     flex-direction: column;
-  }
-  .album-description {
-    text-align: center;
-  }
-  .social-icons-container {
-    position: inherit;
-    flex-direction: row;
-    margin: auto;
-    justify-content: center;
-    margin-top: 10px;
-  }
 
+    .header-links {
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      font-size:  15px;
+      margin: 0;
+    }
+  }
   .album-artist {
     margin: auto;
-    font-size: 60px;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .album {
+    width: 100%;
+    .bandcamp-album-embed {
+      width: 100.5%;
+    }
+  }
+  .sections {
+    margin-top: 35px;
   }
 }
