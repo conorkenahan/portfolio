@@ -66,6 +66,23 @@ $gray: rgb(77, 77, 77);
   width: 90%;
   margin: auto;
   margin-top: 50px;
+
+  .section.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    .footer-links {
+      width: 100%;
+      margin: auto;
+      justify-content: space-evenly;
+      padding-top: 10px;
+      padding-bottom: 28px;
+      a {
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 .section {
@@ -214,6 +231,13 @@ h1 {
   }
   .sections {
     margin-top: 35px;
+
+    .section.footer {
+      .footer-links {
+        padding-bottom: 0;
+        display: flex;
+      }
+    }
   }
 }
 
