@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Trade Gothic';
-  src: url("../fonts/trade-gothic-cold-condensed.ttf") format("opentype"); }
+  src: url("../fonts/trade-gothic-cold-condensed.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Nitti';
-  src: url("../fonts/Nitti-Normal.ttf") format("opentype"); }
+  src: url("../fonts/Nitti-Normal.ttf") format("truetype"); }
 
 /* ========== HOMEPAGE ========== */
 .mobile-image {
