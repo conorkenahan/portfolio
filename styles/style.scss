@@ -2,13 +2,11 @@
   font-family: 'Trade Gothic';
   src: url("../fonts/trade-gothic-cold-condensed.ttf") format("truetype");
 }
+
 @font-face {
   font-family: 'Nitti';
   src: url("../fonts/Nitti-Normal.ttf") format("truetype");
 }
-
-$border:rgba(127, 127, 127, 0.25);
-$gray: rgb(77, 77, 77);
 
 /* ========== HOMEPAGE ========== */
 
@@ -18,38 +16,45 @@ $gray: rgb(77, 77, 77);
 
 .content {
   position: absolute;
-  width: 60%;
+  width: 100%;
+  height: 100%;
   margin-right: 0;
   right: 0;
   top: 0;
-  color: $gray !important;
-  font-family: "Trade Gothic", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-    background-color: rgba(228, 224, 224, 0.664);
+  color: #4d4d4d !important;
+  font-family: "Trade Gothic", "Amalta", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(228, 224, 224, 0.664);
 }
 
 .header {
-  margin: auto;
-  text-align: center;
-  width: 90%;
+  margin: 0;
+  text-align: left;
+  width: 40%;
+  height: 100%;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .header-links {
-  margin: auto;
+  margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-bottom: 6px;
-  border-bottom: 1px solid $border;
-  color: $gray !important;
+  color: #4d4d4d !important;
   -webkit-font-smoothing: antialiased;
+
   h3 {
     margin: 10px;
     cursor: pointer;
   }
 }
+
 .header-option {
   margin: 0;
 }
@@ -78,6 +83,7 @@ $gray: rgb(77, 77, 77);
       justify-content: space-evenly;
       padding-top: 10px;
       padding-bottom: 28px;
+
       a {
         text-transform: uppercase;
       }
@@ -90,16 +96,15 @@ $gray: rgb(77, 77, 77);
   padding-bottom: 50px;
   margin-bottom: 50px;
   width: 100%;
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.25);
 }
 
-.album-artist {
-  margin: auto;
+.name {
+  margin: 0;
   font-size: 40px;
   margin-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid $border;
-  color: $gray !important;
+  color: #4d4d4d !important;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -128,13 +133,14 @@ $gray: rgb(77, 77, 77);
     height: 42px;
   }
 }
+
 .album-img {
   width: 100%;
   height: auto;
 }
 
 a {
-  color: $gray !important;
+  color: #4d4d4d !important;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
 }
@@ -153,7 +159,6 @@ marquee {
   padding-top: 10px;
 }
 
-
 /* ===== main styles ===== */
 
 html {
@@ -161,7 +166,7 @@ html {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   height: 100%;
-  background: url('../images/background-gif-desktop.gif') no-repeat center center fixed; 
+  // background: url("../images/background-gif-desktop.gif") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -169,24 +174,22 @@ html {
 }
 
 h1 {
-  color: $gray !important;
+  color: #4d4d4d !important;
   -webkit-font-smoothing: antialiased;
 }
 
-
-
-
 /* MOBILE */
-
 @media (max-width: 900px) {
   html {
     background: none;
   }
+
   body {
     margin: 0;
     display: flex;
     flex-direction: column;
   }
+
   .mobile-image {
     display: block;
     z-index: 1;
@@ -195,16 +198,18 @@ h1 {
     align-items: center;
     overflow: hidden;
     width: 100vw;
+
     img {
       flex-shrink: 0;
       min-width: 100%;
       min-height: 100%;
     }
   }
+
   .content {
     position: relative;
-    width: 100%;
   }
+
   .header {
     margin: auto;
     flex-direction: column;
@@ -217,42 +222,44 @@ h1 {
       margin: 0;
     }
   }
-  .album-artist {
+
+  .name {
     margin: auto;
     font-size: 40px;
     padding-top: 10px;
     padding-bottom: 30px;
   }
+
   .album {
     width: 100%;
+
     .bandcamp-album-embed {
       width: 100.5%;
     }
   }
+
   .sections {
     margin-top: 35px;
 
-    .section.footer {
-      .footer-links {
-        padding-bottom: 0;
-        display: flex;
-      }
+    .section.footer .footer-links {
+      padding-bottom: 0;
+      display: flex;
     }
   }
 }
 
 @media (max-width: 460px) {
   h3 {
-    font-size:  13px;
+    font-size: 13px;
   }
 }
 
-
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
