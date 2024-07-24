@@ -28,5 +28,6 @@
 
 		@include breakpoint('<=large') {
 			background-attachment: scroll;
+			flex-direction: column-reverse;
 		}
 	}

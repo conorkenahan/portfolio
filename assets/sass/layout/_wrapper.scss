@@ -13,6 +13,9 @@
 			@include breakpoint('<=large') {
 				margin-left: 0;
 				padding-top: _size(sidebar-height);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
 
 			@include breakpoint('<=small') {

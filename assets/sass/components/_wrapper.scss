@@ -38,8 +38,23 @@
 			justify-content: center;
 			align-items: center;
 			letter-spacing: 2px;
+			width: 80%;
 			@include breakpoint('<=small') {
 				height: 500px;
+			}
+
+			.conor-image {
+				background-image: url('../../../images/conor.JPG');
+				border-radius: 50%;
+				height: 440px;
+				width: 100%;
+				
+				@include breakpoint('<=small') {
+					background-image: url('../../../images/conor_cropped.JPG');
+					background-size: cover;
+					height: 100%;
+					width: 11em;
+				}
 			}
 		}
 
@@ -68,6 +83,7 @@
 			@include vendor('flex-direction', 'column');
 			@include vendor('justify-content', 'center');
 			min-height: 100vh;
+			flex-direction: row;
 
 			body.is-ie & {
 				height: 100vh;
