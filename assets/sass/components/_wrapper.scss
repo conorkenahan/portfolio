@@ -41,10 +41,12 @@
 			width: 80%;
 			@include breakpoint('<=small') {
 				height: 500px;
+				margin-bottom: 50%;
 			}
 
 			.conor-image {
 				background-image: url('../../../images/conor.JPG');
+				background-size: cover;
 				border-radius: 50%;
 				height: 440px;
 				width: 100%;

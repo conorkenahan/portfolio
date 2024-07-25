@@ -2724,10 +2724,12 @@ table.alt tfoot {
 @media screen and (max-width: 736px) {
   .wrapper.style1 {
     height: 500px;
+    margin-bottom: 50%;
   }
 }
 .wrapper.style1 .conor-image {
   background-image: url("../../../images/conor.JPG");
+  background-size: cover;
   border-radius: 50%;
   height: 440px;
   width: 100%;
@@ -3245,10 +3247,14 @@ body.is-preload #sidebar nav ul li {
 @media screen and (max-width: 1280px) {
   #intro {
     background-attachment: scroll;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 736px) {
+  #intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-top: 80px;
   }
 }
