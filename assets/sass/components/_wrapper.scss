@@ -23,7 +23,7 @@
 			}
 
 			@include breakpoint('<=small') {
-				@include padding(3em, 2em);
+				@include padding(3em, 1em);
 			}
 		}
 
@@ -48,14 +48,14 @@
 				background-image: url('../../../images/conor.JPG');
 				background-size: cover;
 				border-radius: 50%;
-				height: 440px;
+				height: 400px;
 				width: 100%;
 				
 				@include breakpoint('<=small') {
 					background-image: url('../../../images/conor_cropped.JPG');
-					background-size: cover;
-					height: 100%;
-					width: 11em;
+					background-position: center;
+					height: 248px;
+					width: 13em;
 				}
 			}
 		}
