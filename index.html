@@ -15,6 +15,7 @@
       <ul class="nav-links">
         <li><a href="#music" data-section="music">Music</a></li>
         <li><a href="#collaborations" data-section="collaborations">Collaborations</a></li>
+        <li><a href="https://worldecho.live/" target="_blank" rel="noopener">Radio</a></li>
         <li><a href="#contact" data-section="contact">Contact</a></li>
       </ul>
     </nav>
@@ -95,6 +96,8 @@
     // Navigation functionality
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', (e) => {
+        if (!sectionId) return;
+        
         e.preventDefault();
 
         // Hide all sections
