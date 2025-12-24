@@ -55,23 +55,23 @@
       <div class="albums-grid">
         <!-- Collaboration 1 -->
         <iframe style="border: 0;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=1284135407/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          data-src="https://bandcamp.com/EmbeddedPlayer/album=1284135407/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
           seamless><a href="https://starlaonline.bandcamp.com/album/amphora">Amphora by Starla Online</a></iframe>
 
         <!-- Collaboration 2 -->
         <iframe style="border: 0;"
-          src="https://bandcamp.com/EmbeddedPlayer/track=2425077186/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          data-src="https://bandcamp.com/EmbeddedPlayer/track=2425077186/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
           seamless><a href="https://neuro---fuzzy.bandcamp.com/track/h-mar">Hämar by Neuro Fuzzy</a></iframe>
 
         <!-- Collaboration 3 -->
         <iframe style="border: 0;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2589116798/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          data-src="https://bandcamp.com/EmbeddedPlayer/album=2589116798/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
           seamless><a href="https://jseger.com/album/age-cowboy-meets-ok-trill-boy">Age Cowboy meets... OK Trill Boy by
             J Seger</a></iframe>
 
         <!-- Collaboration 4 -->
         <iframe style="border: 0;"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3218423060/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          data-src="https://bandcamp.com/EmbeddedPlayer/album=3218423060/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
           seamless><a href="https://jseger.com/album/will-i-only-harvest-some">Will I Only Harvest Some by Justin Baker
             &amp; J Seger</a></iframe>
       </div>
@@ -98,7 +98,17 @@
       link.addEventListener('click', (e) => {
         const sectionId = link.getAttribute('data-section');
         if (!sectionId) return;
-        
+
+        if (sectionId === 'collaborations') {
+          document
+            .querySelectorAll('#collaborations iframe[data-src]')
+            .forEach(iframe => {
+              if (!iframe.src) {
+                iframe.src = iframe.dataset.src;
+              }
+            });
+        }
+
         e.preventDefault();
 
         // Hide all sections
