@@ -1,152 +1,130 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conor Kenahan</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-    <link rel="stylesheet" href="https://use.typekit.net/ruq0iog.css" />
-  </head>
-  <body class="is-preload">
-    <!-- Sidebar -->
-    <section id="sidebar">
-      <div class="inner">
-        <nav>
-          <ul>
-            <li><a href="#intro">hello</a></li>
-            <li><a href="#one">work</a></li>
-            <!-- <li><a href="#two">What we do</a></li> -->
-            <li><a href="#two">Get in touch</a></li>
-          </ul>
-        </nav>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conor Kenahan</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Conor Kenahan</div>
+      <ul class="nav-links">
+        <li><a href="#music" data-section="music">Music</a></li>
+        <li><a href="#collaborations" data-section="collaborations">Collaborations</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="music" class="section active">
+      <h1 class="page-title">Music</h1>
+      <div class="albums-grid">
+        <!-- Album 1 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2060093600/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://conorkenahan.bandcamp.com/album/water-for-beginners">Water: For Beginners by Conor
+            Kenahan</a></iframe>
+
+        <!-- Album 2 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/track=4275193467/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://conorkenahan.bandcamp.com/track/bodyguard">Bodyguard by Conor Kenahan</a></iframe>
+
+        <!-- Album 3 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=1116782996/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://conorkenahan.bandcamp.com/album/this-living-act">This Living Act by Conor
+            Kenahan</a></iframe>
+        <!-- Album 4 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2059630046/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://conorkenahan.bandcamp.com/album/reverie">Reverie by Conor Kenahan</a></iframe>
+
+        <!-- Add more albums as needed -->
       </div>
     </section>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Intro -->
-      <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <div class="inner">
-          <h1>Conor Kenahan</h1>
-          <p>producer - songwriter - engineer</p>
-          <p>brooklyn, ny</p>
-          <!-- <ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul> -->
+    <section id="collaborations" class="section">
+      <h1 class="page-title">Collaborations</h1>
+      <div class="albums-grid">
+        <!-- Collaboration 1 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=1284135407/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://starlaonline.bandcamp.com/album/amphora">Amphora by Starla Online</a></iframe>
+
+        <!-- Collaboration 2 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/track=2425077186/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://neuro---fuzzy.bandcamp.com/track/h-mar">Hämar by Neuro Fuzzy</a></iframe>
+
+        <!-- Collaboration 3 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2589116798/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://jseger.com/album/age-cowboy-meets-ok-trill-boy">Age Cowboy meets... OK Trill Boy by
+            J Seger</a></iframe>
+
+        <!-- Collaboration 4 -->
+        <iframe style="border: 0;"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3218423060/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+          seamless><a href="https://jseger.com/album/will-i-only-harvest-some">Will I Only Harvest Some by Justin Baker
+            &amp; J Seger</a></iframe>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h1 class="page-title">Contact</h1>
+      <div class="contact-section">
+        <div class="contact-image">
+          <img src="./images/conor.JPG" />
         </div>
-        <div class="conor-image"></div>
-      </section>
-
-      <!-- One -->
-      <section id="one" class="wrapper style2 spotlights">
-        <section>
-          <div class="content">
-            <div class="inner">
-              <iframe
-                class="bandcamp"
-                src="https://bandcamp.com/EmbeddedPlayer/album=1284135407/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-                seamless
-                ><a href="https://starlaonline.bandcamp.com/album/amphora"
-                  >Amphora by Starla Online</a
-                ></iframe
-              >
-              <h2>Starla Online</h2>
-              <h3>Amorpha</h3>
-              <p>engineering</p>
-            </div>
-            <!-- <ul class="actions">
-              <li><a href="generic.html" class="button">Learn more</a></li>
-            </ul> -->
-          </div>
-        </section>
-        <section>
-          <div class="content">
-            <div class="inner">
-              <iframe
-                class="bandcamp"
-                src="https://bandcamp.com/EmbeddedPlayer/album=1116782996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-                seamless
-                ><a
-                  href="https://conorkenahan.bandcamp.com/album/this-living-act"
-                  >This Living Act by Conor Kenahan</a
-                ></iframe
-              >
-              <h2>Conor Kenahan</h2>
-              <h3>This Living Act</h3>
-              <p>songwriting, production, engineering</p>
-              <!-- <ul class="actions">
-                <li><a href="generic.html" class="button">Learn more</a></li>
-              </ul> -->
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="content">
-            <div class="inner">
-              <iframe
-                class="bandcamp"
-                src="https://bandcamp.com/EmbeddedPlayer/album=707376952/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-                seamless
-                ><a href="https://jseger.com/album/age-cowboy-meets-va-md"
-                  >Age Cowboy meets... VA/MD by J Seger</a
-                ></iframe
-              >
-              <h2>J Seger</h2>
-              <h3>Age Cowboy meets... VA/MD</h3>
-              <p>mixing, mastering</p>
-              <!-- <ul class="actions">
-                <li><a href="generic.html" class="button">Learn more</a></li>
-              </ul> -->
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <!-- Two -->
-      <section id="two" class="wrapper style1 fade-up">
-        <div class="inner">
-          <h2>Get in touch</h2>
-          <p>I want to hear about your project. Hit me up and let's chat!</p>
-          <div class="split style1">
-            <section>
-              <ul class="contact">
-                <li>
-                  <!-- <h3>Email</h3> -->
-                  <a href="mailto:conorkenahan@gmail.com"
-                    >conorkenahan@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <!-- <h3>Social</h3> -->
-                  <ul class="icons">
-                    <li>
-                      <a
-                        href="https://www.instagram.com/conmaniac"
-                        class="icon brands fa-instagram"
-                        target="_blank"
-                        ><span class="label">Instagram</span></a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
-          </div>
+        <div class="contact-links">
+          <p>Musician and producer located in Brooklyn, NY.</p>
+          <a href="mailto:conorkenahan@gmail.com">Email</a>
+          <a href="https://conorkenahan.bandcamp.com/" target="_blank">Bandcamp</a>
+          <a href="https://instagram.com/conmaniac" target="_blank">Instagram</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <script>
+    // Navigation functionality
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Hide all sections
+        document.querySelectorAll('.section').forEach(section => {
+          section.classList.remove('active');
+        });
+
+        // Show selected section
+        const sectionId = link.getAttribute('data-section');
+        document.getElementById(sectionId).classList.add('active');
+
+        // Update URL hash
+        window.history.pushState(null, '', `#${sectionId}`);
+      });
+    });
+
+    // Handle direct URL navigation
+    window.addEventListener('load', () => {
+      const hash = window.location.hash.slice(1);
+      if (hash) {
+        document.querySelectorAll('.section').forEach(section => {
+          section.classList.remove('active');
+        });
+        const targetSection = document.getElementById(hash);
+        if (targetSection) {
+          targetSection.classList.add('active');
+        }
+      }
+    });
+  </script>
+</body>
+
 </html>
