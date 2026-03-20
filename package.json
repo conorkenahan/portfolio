@@ -1,10 +1,22 @@
 {
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "css": "node-sass --include-path scss styles/style.scss styles/style.css",
-    "watch": "nodemon -e scss -x 'npm run css'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.5.13",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.22"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   }
 }
