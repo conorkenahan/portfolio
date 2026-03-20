@@ -58,35 +58,19 @@ export default function Home() {
             <iframe
               style={{ border: 0 }}
               src="https://bandcamp.com/EmbeddedPlayer/album=2060093600/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
-            >
-              <a href="https://conorkenahan.bandcamp.com/album/water-for-beginners">
-                Water: For Beginners by Conor Kenahan
-              </a>
-            </iframe>
+            />
             <iframe
               style={{ border: 0 }}
               src="https://bandcamp.com/EmbeddedPlayer/track=4275193467/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
-            >
-              <a href="https://conorkenahan.bandcamp.com/track/bodyguard">
-                Bodyguard by Conor Kenahan
-              </a>
-            </iframe>
+            />
             <iframe
               style={{ border: 0 }}
               src="https://bandcamp.com/EmbeddedPlayer/album=1116782996/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
-            >
-              <a href="https://conorkenahan.bandcamp.com/album/this-living-act">
-                This Living Act by Conor Kenahan
-              </a>
-            </iframe>
+            />
             <iframe
               style={{ border: 0 }}
               src="https://bandcamp.com/EmbeddedPlayer/album=2059630046/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
-            >
-              <a href="https://conorkenahan.bandcamp.com/album/reverie">
-                Reverie by Conor Kenahan
-              </a>
-            </iframe>
+            />
           </div>
         </section>
 
@@ -100,11 +84,7 @@ export default function Home() {
                   ? 'https://bandcamp.com/EmbeddedPlayer/album=1284135407/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/'
                   : undefined
               }
-            >
-              <a href="https://starlaonline.bandcamp.com/album/amphora">
-                Amphora by Starla Online
-              </a>
-            </iframe>
+            />
             <iframe
               style={{ border: 0 }}
               src={
@@ -112,11 +92,7 @@ export default function Home() {
                   ? 'https://bandcamp.com/EmbeddedPlayer/track=2425077186/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/'
                   : undefined
               }
-            >
-              <a href="https://neuro---fuzzy.bandcamp.com/track/h-mar">
-                Hämar by Neuro Fuzzy
-              </a>
-            </iframe>
+            />
             <iframe
               style={{ border: 0 }}
               src={
@@ -124,11 +100,7 @@ export default function Home() {
                   ? 'https://bandcamp.com/EmbeddedPlayer/album=2589116798/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/'
                   : undefined
               }
-            >
-              <a href="https://jseger.com/album/age-cowboy-meets-ok-trill-boy">
-                Age Cowboy meets OK Trill Boy by J Seger
-              </a>
-            </iframe>
+            />
             <iframe
               style={{ border: 0 }}
               src={
@@ -136,11 +108,7 @@ export default function Home() {
                   ? 'https://bandcamp.com/EmbeddedPlayer/album=3218423060/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/'
                   : undefined
               }
-            >
-              <a href="https://jseger.com/album/will-i-only-harvest-some">
-                Will I Only Harvest Some by Justin Baker &amp; J Seger
-              </a>
-            </iframe>
+            />
           </div>
         </section>
 
